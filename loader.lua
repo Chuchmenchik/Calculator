@@ -1,8 +1,8 @@
 "-- Blox Fruits Remote Loader
-local ManifestUrl = \"https://raw.githubusercontent.com/YourUsername/YourRepo/main/manifest.lua\"
+local ManifestUrl = \"https://raw.githubusercontent.com/Chuchmenchik/Calculator/refs/heads/master/manifest.lua\"
 
 local function LoadModule(moduleData)
-    local url = \"https://raw.githubusercontent.com/YourUsername/YourRepo/main/\" .. moduleData.path
+    local url = \"https://raw.githubusercontent.com/Chuchmenchik/Calculator/refs/heads/master/\" .. moduleData.path
     local success, result = pcall(function()
         local code = game:HttpGet(url)
         local module = loadstring(code)()
